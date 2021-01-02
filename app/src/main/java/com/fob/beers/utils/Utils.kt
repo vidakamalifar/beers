@@ -15,6 +15,28 @@ import com.google.android.material.snackbar.Snackbar
 class Utils {
 
     companion object {
+        fun showSnackBar(v: View?, snackBarText: String?, context: Context?) {
+            if (v == null || snackBarText == null) {
+                return
+            }
+
+            val snackBar =
+                Snackbar.make(v, snackBarText, 4000) //Snackbar.LENGTH_LONG
+                    .setAction("Action", null)
+            val sbView = snackBar.view
+            context?.let { ContextCompat.getColor(it, R.color.blue) }?.let {
+                sbView.setBackgroundColor(
+                    it
+                )
+            }
+            val snackText = snackBar.view.findViewById<TextView>(
+                com.google.android.material.R.id.snackbar_text
+            )
+            snackText.textSize = 14f
+            snackBar.show()
+
+
+        }
         fun checkNetwork(context: Context?): Boolean {
             val connectivityManager =
                 context?.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
