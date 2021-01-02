@@ -10,10 +10,9 @@ import android.view.Window
 abstract class BaseDialog(context: Context) {
 
     internal lateinit var parentView: View
-    private var dialog: Dialog
+    private var dialog: Dialog = Dialog(context)
 
     init {
-        dialog = Dialog(context)
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         dialog.setCanceledOnTouchOutside(true)
@@ -32,13 +31,7 @@ abstract class BaseDialog(context: Context) {
         dialog.dismiss()
     }
 
-    fun isShowing(): Boolean {
-        return dialog.isShowing
-    }
-
     fun getDialog(): Dialog? {
         return dialog
     }
-
-
 }
