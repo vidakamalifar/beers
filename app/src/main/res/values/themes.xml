@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Beers" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Beers" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -8,9 +8,51 @@
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSecondary">@color/blue</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="MyTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">@dimen/padding_title_text_view</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="ButtonStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_button</item>
+        <item name="android:layout_marginStart">@dimen/margin_button</item>
+        <item name="android:layout_marginRight">@dimen/margin_button</item>
+        <item name="android:layout_marginEnd">@dimen/margin_button</item>
+        <item name="android:layout_marginBottom">@dimen/margin_button</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_button</item>
+    </style>
+
+    <style name="RadioButtonMyTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingBottom">@dimen/padding_radio_button</item>
+        <item name="android:paddingTop">@dimen/padding_radio_button</item>
+    </style>
+
+    <style name="TitleTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">@dimen/padding_title_text_view</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_slide_up_animate</item>
+        <item name="android:windowExitAnimation">@anim/dialog_slide_down_animate</item>
+    </style>
+
 </resources>

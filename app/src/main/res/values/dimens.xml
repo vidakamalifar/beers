@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_result_text_view_12dp">12dp</dimen>
+
+
+    <dimen name="padding_title_text_view">16dp</dimen>
+    <dimen name="line_height_1dp">1dp</dimen>
+    <dimen name="margin_line_3dp">3dp</dimen>
+
+    <dimen name="padding_bottom_24_dialog">24dp</dimen>
+    <dimen name="radius_button">10dp</dimen>
+    <dimen name="margin_button">8dp</dimen>
+    <dimen name="margin_top_button">16dp</dimen>
+    <dimen name="padding_radio_button">12dp</dimen>
+</resources>

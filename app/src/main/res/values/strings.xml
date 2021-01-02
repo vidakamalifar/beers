@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Beers</string>
+    <string name="server_error">server error</string>
+    <string name="favorite">favorite</string>
+    <string name="sort">sort</string>
+    <string name="cancel">cancel</string>
+    <string name="done">done</string>
+    <string name="sort_by">Sort by</string>
+    <string name="ABV">ABV</string>
+    <string name="IBU">IBU</string>
+    <string name="EBC">EBC</string>
 </resources>
