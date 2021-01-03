@@ -35,7 +35,7 @@ class ExampleInstrumentedTest {
 
     @RunWith(AndroidJUnit4::class)
     class SimpleEntityReadWriteTest {
-        private lateinit var mUserDao: BeerDAO
+        private lateinit var mUBeerDao: BeerDAO
         private lateinit var mDb: AppDatabase
 
         @Before
@@ -44,7 +44,7 @@ class ExampleInstrumentedTest {
             mDb = Room.inMemoryDatabaseBuilder(
                 context, AppDatabase::class.java
             ).build()
-            mUserDao = mDb.beerDAO!!
+            mUBeerDao = mDb.beerDAO!!
 
         }
 
@@ -62,8 +62,8 @@ class ExampleInstrumentedTest {
                 val beer = Beer("vida$i")
                 beerList.add(beer)
             }
-            mUserDao.insert(beerList)
-            val byName = mUserDao.getBeers()
+            mUBeerDao.insert(beerList)
+            val byName = mUBeerDao.getBeers()
             assertThat("Db Test Result", byName?.get(0)?.name, equalTo("vida0"))
         }
     }
