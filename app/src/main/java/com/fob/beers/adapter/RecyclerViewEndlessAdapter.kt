@@ -10,9 +10,9 @@ import com.fob.beers.R
 
 
 abstract class RecyclerViewEndlessAdapter<T>(
-    private var items: ArrayList<T?>,
-    private var context: Context?,
-    private var recyclerView: RecyclerView?,
+    var items: ArrayList<T?>,
+    var context: Context?,
+    var recyclerView: RecyclerView?,
     onLoadMoreListener: OnLoadMoreListener?
 ) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
