@@ -4,6 +4,7 @@
 
 
     <dimen name="padding_title_text_view">16dp</dimen>
+    <dimen name="padding_title_text_view_4dp">4dp</dimen>
     <dimen name="line_height_1dp">1dp</dimen>
     <dimen name="margin_line_3dp">3dp</dimen>
 
@@ -12,4 +13,10 @@
     <dimen name="margin_button">8dp</dimen>
     <dimen name="margin_top_button">16dp</dimen>
     <dimen name="padding_radio_button">12dp</dimen>
+    <dimen name="margin_linear_layout_8dp">8dp</dimen>
+    <dimen name="margin_linear_layout_16dp">16dp</dimen>
+    <dimen name="margin_text_view_8dp">8dp</dimen>
+    <dimen name="margin_beer_item_4dp">4dp</dimen>
+    <dimen name="image_size_50dp">50dp</dimen>
+    <dimen name="margin_image_start_8dp">8dp</dimen>
 </resources>

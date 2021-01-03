@@ -9,4 +9,12 @@
     <string name="ABV">ABV</string>
     <string name="IBU">IBU</string>
     <string name="EBC">EBC</string>
+    <string name="SRM">SRM</string>
+    <string name="PH">PH</string>
+    <string name="attenuation_level">Attenuation Level</string>
+    <string name="favorite_beer">Favorite Beers</string>
+    <string name="food_pairing">Food Pairing</string>
+    <string name="you_don_t_have_favorite_beer">You don\'t have favorite beer</string>
+    <string name="contributed_by">Contributed By</string>
+    <string name="brewers_tips">Brewers Tips</string>
 </resources>
