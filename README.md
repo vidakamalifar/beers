@@ -57,3 +57,9 @@ The fob_solutions.png document here is utilized as the picture to show in one of
 <li>res/values/theme.xml</li>
 </ul>
 These XML records depict extra assets remembered for the application.
+
+<img src="https://i.ibb.co/23KYDXx/2021-01-04-14-09-01.jpg"></img>
+<img src="https://i.ibb.co/k52TVkg/2021-01-04-14-08-51.jpg"></img>
+
+
+
