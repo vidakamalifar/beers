@@ -114,6 +114,8 @@
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="@+id/guideline2"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            android:layout_marginLeft="@dimen/margin_text_view_8dp"
+            android:layout_marginRight="@dimen/margin_text_view_8dp"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintStart_toEndOf="@+id/guideline"
